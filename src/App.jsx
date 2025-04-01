@@ -1,6 +1,6 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import FormulaInput from './components/FormulaInput';
+import FormulaInput from './components/FormulaInput/FormulaInput';
 import './App.css';
 
 const queryClient = new QueryClient({

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import './AutocompleteSuggestions.css';
-import { useSuggestions } from '../services/api';
+import { useSuggestions } from '../../services/api';
 
 const AutocompleteSuggestions = forwardRef(({ 
   query, 

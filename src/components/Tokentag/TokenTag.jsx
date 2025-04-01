@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useFormulaStore } from '../store/formulaStore';
+import { useFormulaStore } from '../../store/formulaStore';
 import './TokenTag.css';
 
 const TokenTag = ({ token, index, isActive, onSelect }) => {

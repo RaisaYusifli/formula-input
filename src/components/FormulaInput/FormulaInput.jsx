@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useFormulaStore } from '../store/formulaStore';
-import TokenTag from './TokenTag';
-import AutocompleteSuggestions from './AutocompleteSuggestions';
+import { useFormulaStore } from '../../store/formulaStore';
+import TokenTag from '../Tokentag/TokenTag';
+import AutocompleteSuggestions from '../AutocompleteSuggestion/AutocompleteSuggestions';
 import './FormulaInput.css';
 
 const OPERATORS = ['+', '-', '*', '/', '^', '(', ')'];
