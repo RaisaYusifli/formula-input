@@ -1,0 +1,123 @@
+.suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
+    max-height: 300px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 8px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .suggestions-header {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .suggestions-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .search-query {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+  }
+  
+  .suggestion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .suggestion-item:hover,
+  .suggestion-focused {
+    background-color: #f5f8ff;
+  }
+  
+  .suggestion-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .suggestion-name {
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .suggestion-description {
+    font-size: 12px;
+    color: #777;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+  
+  .suggestion-type {
+    font-size: 11px;
+    color: #555;
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  .suggestions {
+    padding: 15px;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+  }
+  
+  .suggestions.loading {
+    color: #1976d2;
+  }
+  
+  .suggestions.error {
+    color: #d32f2f;
+  }
+  
+  .suggestions.empty {
+    color: #777;
+  }
+  
+  .suggestions.hint {
+    color: #555;
+    font-style: italic;
+  }
