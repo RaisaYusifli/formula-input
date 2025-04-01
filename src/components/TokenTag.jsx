@@ -7,10 +7,8 @@ const TokenTag = ({ token, index, isActive, onSelect }) => {
   const dropdownRef = useRef(null);
   const tokenRef = useRef(null);
 
-  // Get actions from formula store
   const { removeTokenAtIndex, updateToken } = useFormulaStore();
 
-  // Handle clicks outside to close dropdown
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target) &&
